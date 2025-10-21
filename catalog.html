@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Компания — Каталог</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.jpg.jpg" alt="РегионМаркет" class="logo">
+        <span class="РегионМаркет">РегионМаркет</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle2" aria-expanded="false" aria-controls="mainNav2">
+        <span class="sr-only">Открыть меню</span>
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="mainNav2" class="main-nav" aria-label="Главная навигация">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Главная</a></li>
+          <li><a class="nav-link active" href="catalog.html">Каталог</a></li>
+          <li><a class="nav-link" href="#about">О компании</a></li>
+          <li><a class="nav-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="catalog-header">
+      <h1 class="title">Каталог товаров</h1>
+      <p class="lead">Выберите категорию или используйте фильтры для быстрого поиска.</p>
+      <div class="catalog-controls">
+        <div class="filter-group">
+          <label for="category">Категория:</label>
+          <select id="category" name="category">
+            <option value="all">Все</option>
+            <option value="category1">Категория 1</option>
+            <option value="category2">Категория 2</option>
+          </select>
+        </div>
+        <div class="search-group">
+          <input type="search" placeholder="Поиск по товарам..." aria-label="Поиск по товарам">
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-grid cards-grid">
+      <!-- Повторяющиеся карточки -->
+      <article class="product-card">
+        <img src="mylt.jpg.jpg" alt="Товар 1" class="product-image">
+        <div class="product-body">
+          <h3 class="product-title">мультиварка</h3>
+          <p class="product-desc">Расширенное описание товара. Технические характеристики, материалы и рекомендации.</p>
+          <div class="product-meta">
+            <span class="price">₸ 10,900</span>
+            <a class="btn btn-small" href="#">Купить</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="mikser.jpg.avif" alt="Товар 2" class="product-image">
+        <div class="product-body">
+          <h3 class="product-title">миксер</h3>
+          <p class="product-desc">Описание, размеры, срок службы и гарантия.</p>
+          <div class="product-meta">
+            <span class="price">₸ 8,200</span>
+            <a class="btn btn-small" href="#">Купить</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="blendr.jpg.webp" alt="Товар 3" class="product-image">
+        <div class="product-body">
+          <h3 class="product-title">блендр</h3>
+          <p class="product-desc">Описание, комплектация, доступность на складе.</p>
+          <div class="product-meta">
+            <span class="price">₸ 12,000</span>
+            <a class="btn btn-small" href="#">Купить</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Добавьте дополнительные карточки по необходимости -->
+    </section>
+
+    <div class="pagination center">
+      <a class="page" href="#">1</a>
+      <a class="page" href="#">2</a>
+      <a class="page" href="#">3</a>
+      <a class="page" href="#">→</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4 class="footer-title">Контакты</h4>
+        <p>г. Кокшетау, ул. Примерная, 10<br>Телефон: +7 (700) 000-00-00</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Соцсети</h4>
+        <div class="socials">
+          <a class="social" href="#"><img src="assets/ico-instagram.png" alt=""></a>
+          <a class="social" href="#"><img src="assets/ico-facebook.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <small>© <span id="currentYear2"></span> Название компании</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('currentYear2').textContent = new Date().getFullYear();
+    document.getElementById('navToggle2').addEventListener('click', () => {
+      const nav = document.getElementById('mainNav2');
+      const btn = document.getElementById('navToggle2');
+      const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

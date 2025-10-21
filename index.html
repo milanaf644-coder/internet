@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Компания — Главная</title>
+
+  <!-- Google Fonts (пример) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Site header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <!-- Замените src на ваш логотип -->
+        <img src="logo.jpg.jpg" alt="Логотип компании" class="logo">
+        <span class="РегионМаркет">Название компании</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
+        <span class="sr-only">Открыть меню</span>
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Главная навигация">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Главная</a></li>
+          <li><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li><a class="nav-link" href="#about">О компании</a></li>
+          <li><a class="nav-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Banner -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1 class="title">Старейшая компания в регионе — современные решения</h1>
+        <p class="lead">Мы объединили опыт и инновации. Узнайте о наших услугах и товарах — всё для вашего комфорта.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="catalog.html">Перейти в каталог</a>
+          <a class="btn btn-ghost" href="#about">О компании</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <!-- Замените картинку на подходящую -->
+        <img src="logo.jpg.jpg" alt="Основной баннер" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features / Advantages -->
+  <section class="features container">
+    <h2 class="section-title">Наши преимущества</h2>
+    <div class="features-grid">
+      <article class="feature-card">
+        <img src="kastvo.jpg.jpg" alt="" class="feature-icon">
+        <h3 class="feature-title">Качество</h3>
+        <p class="feature-desc">Долгая история и проверенные материалы.</p>
+      </article>
+
+      <article class="feature-card">
+        <img src="dostavka.jpg.jpg" alt="" class="feature-icon">
+        <h3 class="feature-title">Доставка</h3>
+        <p class="feature-desc">Собственная логистика по всему региону.</p>
+      </article>
+
+      <article class="feature-card">
+        <img src="podder.jpg.jpg" alt="" class="feature-icon">
+        <h3 class="feature-title">Поддержка</h3>
+        <p class="feature-desc">Клиентская поддержка 7 дней в неделю.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Brief catalog preview -->
+  <section class="catalog-preview container">
+    <h2 class="section-title">Популярные товары</h2>
+    <div class="cards-grid">
+      <!-- Карточки товара — одинаковые по высоте/ширине -->
+      <article class="product-card">
+        <img src="mylt.jpg.jpg" alt="мультиварка" class="product-image">
+        <div class="product-body">
+          <h3 class="product-title">мультиварка</h3>
+          <p class="product-desc">шикарно подходит для быстрой и вкусной готовки.</p>
+          <div class="product-meta">
+            <span class="price">₸ 10,900</span>
+            <a class="link-more" href="catalog.html">Подробнее →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="mikser.jpg.avif" alt="миксер" class="product-image">
+        <div class="product-body">
+          <h3 class="product-title">миксер</h3>
+          <p class="product-desc">взобьет любую констинтенцию , блюдо получается пышное и вкусное.</p>
+          <div class="product-meta">
+            <span class="price">₸ 8,200</span>
+            <a class="link-more" href="catalog.html">Подробнее →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="blendr.jpg.webp" alt="блендр" class="product-image">
+        <div class="product-body">
+          <h3 class="product-title">блендр</h3>
+          <p class="product-desc">добавив фрукты , получите вкусный и нащищеный сок.</p>
+          <div class="product-meta">
+            <span class="price">₸ 12,000</span>
+            <a class="link-more" href="catalog.html">Подробнее →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="center mt-24">
+      <a class="btn btn-outline" href="catalog.html">Все товары</a>
+    </div>
+  </section>
+
+  <!-- About / Company info -->
+  <section id="about" class="about container">
+    <h2 class="section-title">О компании</h2>
+    <p class="text">Мы — старейшая компания в регионе, сохраняющая традиции качества и одновременно внедряющая современные технологии. Новый директор по маркетингу разработал структуру сайта — мы рады представить первый дизайн.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacts" class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4 class="footer-title">Контакты</h4>
+        <p>г. Кокшетау, ул. Примерная, 10<br>Телефон: +7 (700) 000-00-00<br>Email: info@example.kz</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Соцсети</h4>
+        <div class="socials">
+          <a class="social" href="#" aria-label="Instagram"><img src="assets/ico-instagram.png" alt=""></a>
+          <a class="social" href="#" aria-label="Facebook"><img src="assets/ico-facebook.png" alt=""></a>
+          <a class="social" href="#" aria-label="Telegram"><img src="assets/ico-telegram.png" alt=""></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Часы работы</h4>
+        <p>Пн–Пт: 09:00–18:00<br>Сб: 10:00–15:00<br>Вс: вых.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <small>© <span id="currentYear"></span> РегионМаркет. Все права защищены.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Простая логика для гамбургера
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+      navToggle.setAttribute('aria-expanded', !expanded);
+      mainNav.classList.toggle('open');
+    });
+
+    // Текущий год в футере
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Equalize product card heights on larger screens (simple approach)
+    function equalizeCards() {
+      const cards = document.querySelectorAll('.product-card .product-body');
+      let max = 0;
+      cards.forEach(c => {
+        c.style.height = 'auto';
+        if (c.offsetHeight > max) max = c.offsetHeight;
+      });
+      cards.forEach(c => { c.style.height = max + 'px'; });
+    }
+    window.addEventListener('load', equalizeCards);
+    window.addEventListener('resize', () => { if (window.innerWidth > 800) equalizeCards(); else {
+      document.querySelectorAll('.product-card .product-body').forEach(c => c.style.height = 'auto');
+    }});
+  </script>
+</body>
+</html>
